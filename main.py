@@ -15,7 +15,6 @@ import json
 # import requests
 # import urllib.request
 # from pathlib import Path
-"@lchenglin29 12/1 到此一遊"
 
 # print('我沒壞，笑死')
 
@@ -59,9 +58,9 @@ bot = commands.Bot(command_prefix='t!', intents=intents)
 async def on_ready():
   # print('活著')
   print(SBoC)
-  online_record = open('online_record.txt', 'a', encoding='utf-8')
-  online_record.write(f"{now_time()}\n")
-  online_record.close()
+  # online_record = open('online_record.txt', 'a', encoding='utf-8')
+  # online_record.write(f"{now_time()}\n")
+  # online_record.close()  2024/04/29 因掛線註解
   call_channel = bot.get_channel(cID_C)
   #await call_channel.send("報告老闆，已經備好料可以開店了")  #有空修改成embed格式
   if call_channel is None:  #確認頻道狀態
@@ -76,7 +75,7 @@ async def on_ready():
 
 @bot.command()
 async def load(ctx, extension):
-  await bot.load_extensi   on(f"cogs.{extension}")
+  await bot.load_extension(f"cogs.{extension}")
   await ctx.send(f"已載入{extension}")
 
 
