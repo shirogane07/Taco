@@ -1,0 +1,7 @@
+{
+  "chanelID_Console" : "1164760409471979590" ,
+  "String_Bot_online_Console" : "報告店長，食材都已經準備好囉！",
+  "String_Bot_online_Console_True" : "報告店長，下列店面已經整理好囉~：",
+  "Msg_Bot_online_Discord" : "報告店長，店面已經開始營業囉！今天是<@997502532274372689>值班。",
+  "String_Bot_online_Console_None" : "報告店長，店面的門打不開ね，請檢查chanel_ID。"
+}
