@@ -123,7 +123,6 @@ async def main():
 # print('Done.')
 
 if __name__ == "__main__":
+  keep_alive.keep_alive()
   asyncio.run(main())
-
-keep_alive.keep_alive()
-bot.run(token)
+#bot.run(token)
